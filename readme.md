@@ -1,3 +1,4 @@
 #### This repo contains Laravel code samples.
 
-[Form handling](https://github.com/jivanrij/laravel-samples/blob/master/forms.md)
+[Blade samples](https://github.com/jivanrij/laravel-samples/blob/master/blade.md)
+
