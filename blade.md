@@ -27,3 +27,17 @@
 </div>
 ```
 
+#### Form | Checkbox field edit examples
+```blade
+<div class="{{$errors->has('model_field') ? 'error_class' : '' }}">
+    <input class="checkbox" id="model_field" name="model_field" type="checkbox" value="1" {{ ((boolean) !is_null(Session::get('errors')) ? old('model_field') : $model->model_field) ? 'checked="checked"' : '' }} >
+    @error('model_field')
+        <div class="error">{{$message}}</div>
+    @enderror
+</div>
+```
+
+
+
+
+
