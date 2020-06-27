@@ -7,7 +7,7 @@
 <form action="{{route('your.route', compact($model))}}" method="POST" id="form-id">
     @csrf
     @method('put')
-    {{-- add the feilds here --}
+    {{-- add the fields here --}
 </form>
 ```
 
