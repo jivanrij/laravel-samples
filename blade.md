@@ -1,5 +1,16 @@
 ### Blade code samples
 
+#### Form | Basic form
+```blade
+{{-- The $model needs to have the same name as the parameter in the route file. Else use route('your.route', ['model' => $model]) --}}
+{{-- Put can also be: post, delete, get & patch --}}
+<form action="{{route('your.route', compact($model))}}" method="POST" id="form-id">
+    @csrf
+    @method('put')
+    {{-- add the feilds here --}
+</form>
+```
+
 #### Form | Select field edit examples
 ```blade
 <div class="{{$errors->has('model_field') ? 'error_class' : '' }}">
