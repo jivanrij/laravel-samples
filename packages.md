@@ -1,3 +1,3 @@
 ### Packages
 
-[asdasd](https://laravel-news.com/laravel-shift-blueprint)
+[Shift Blueprint](https://laravel-news.com/laravel-shift-blueprint) ssdfsdf
