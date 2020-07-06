@@ -11,3 +11,5 @@
 [Nova package skeleton](https://github.com/spatie/skeleton-nova-tool) This repo contains a skeleton to easily create Nova Tool packages.
 
 [Translatable](https://github.com/spatie/laravel-translatable) This package contains a trait to make Eloquent models translatable. Translations are stored as json. There is no extra table needed to hold them.
+
+[Nova tags field](https://github.com/spatie/nova-tags-field) This package contains a Nova field to add tags to resources.
