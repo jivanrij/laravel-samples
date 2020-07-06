@@ -15,3 +15,5 @@
 [Nova tags field](https://github.com/spatie/nova-tags-field) This package contains a Nova field to add tags to resources.
 
 [Nova translatable](https://github.com/spatie/nova-translatable) This package contains a Translatable class you can use to make any Nova field type translatable.
+
+[Laravel Excel](https://laravel-excel.com/) Supercharged Excel exports and imports in Laravel.
