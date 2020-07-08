@@ -19,3 +19,5 @@
 [Laravel Excel](https://laravel-excel.com/) Supercharged Excel exports and imports in Laravel.
 
 [Scribe](https://github.com/knuckleswtf/scribe) Generate API documentation for humans from your Laravel codebase.
+
+[Laravel ER diagram](https://github.com/beyondcode/laravel-er-diagram-generator) This package lets you generate entity relation diagrams by inspecting the relationships defined in your model files.
