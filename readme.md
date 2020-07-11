@@ -11,3 +11,9 @@
 ### Nova
 
 [Validation samples](https://github.com/jivanrij/laravel-samples/blob/master/nova-validation.md)
+
+### External
+
+[References](https://github.com/jivanrij/laravel-samples/blob/master/references.md)
+
+[Packages](https://github.com/jivanrij/laravel-samples/blob/master/packages.md)
