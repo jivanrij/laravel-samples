@@ -21,3 +21,5 @@
 [Scribe](https://github.com/knuckleswtf/scribe) Generate API documentation for humans from your Laravel codebase.
 
 [Laravel ER diagram](https://github.com/beyondcode/laravel-er-diagram-generator) This package lets you generate entity relation diagrams by inspecting the relationships defined in your model files.
+
+[Nova Settings](https://github.com/optimistdigital/nova-settings) This Laravel Nova package allows you to create custom settings in code (using Nova's native fields) and creates a UI for the users where the settings can be edited.
