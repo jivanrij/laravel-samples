@@ -1,7 +1,7 @@
-#### Eloquent | Examples
+### Eloquent | Examples
 
 
-### Relations
+#### Relations
 
 A post can belong to many tags, belongs to one user and has many comments refering to it. 
 ```php
@@ -78,7 +78,7 @@ class Tags {
 }
 ```
 
-### Managing relations
+#### Managing relations
 
 ##### hasOne
 ```php

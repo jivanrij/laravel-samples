@@ -8,7 +8,7 @@
 
 [Validation samples](https://github.com/jivanrij/laravel-samples/blob/master/validation.md)
 
-[Eloquent relations](https://github.com/jivanrij/laravel-samples/blob/master/eloquent.md)
+[Eloquent relation examples](https://github.com/jivanrij/laravel-samples/blob/master/eloquent.md)
 
 ### Nova
 
