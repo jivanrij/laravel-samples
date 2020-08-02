@@ -12,7 +12,7 @@ A post can belong to many tags, belongs to one user and has many comments referi
 
 // comment.post_id
 
-class Post {
+class Post extends Model {
     public function tags()
     {
         return $this->belongsToMany(Tags::class);
@@ -31,7 +31,7 @@ class Post {
 A phone belongs to a user.
 ```php
 // phone.user_id
-class Phone {
+class Phone extends Model {
     public function user()
     {
         return $this->belongsTo(User::class);
@@ -42,7 +42,7 @@ class Phone {
 A comment belongs to a post.
 ```php
 // comment.post_id
-class Comment {
+class Comment extends Model {
     public function post()
     {
         return $this->belongsTo(Post::class);
@@ -54,7 +54,7 @@ A user has many posts and has one phone.
 ```php
 // phone.user_id
 // post.user_id
-class User {
+class User extends Model {
     public function posts()
     {
         return $this->hasMany(Post::class);
@@ -70,7 +70,7 @@ A tag belongs to many posts
 ```php
 // post_tag.post_id
 // post_tag.tag_id
-class Tags {
+class Tags extends Model {
     public function posts()
     {
         return $this->belongsToMany(Post::class);
