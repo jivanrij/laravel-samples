@@ -69,7 +69,6 @@ class User extends Model {
 A tag belongs to many posts
 ```php
 // tag.post_id
-// tag.tag_id
 class Tags extends Model {
     public function posts()
     {
