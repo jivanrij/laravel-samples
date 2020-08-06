@@ -7,8 +7,9 @@ A post can belong to many tags, belongs to one user and has many comments referi
 ```php
 // post.user_id
 
-// tag.post_id
-// tag.tag_id
+// pivot table post_tag
+// post_tag.post_id
+// post_tag.tag_id
 
 // comment.post_id
 
@@ -68,9 +69,9 @@ class User extends Model {
 
 A tag belongs to many posts
 ```php
-// pivot table tag_posts
-// tag_post.post_id
-// tag_post.tag_id
+// pivot table post_tag
+// post_tag.post_id
+// post_tag.tag_id
 class Tags extends Model {
     public function posts()
     {
