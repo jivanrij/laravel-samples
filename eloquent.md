@@ -124,7 +124,9 @@ $user->posts()->createMany([$arrayOfPostFields, $arrayOfPostFields]);
 $user->posts()->attach($postModel);
 ```
 
-#### Scope Examples
+#### Scope and querybuilder examples
+
+##### With subquery criteria
 ```php
 // Scope that returns all the users with one of the given phone brands.
 // phone.brand_id is a FK to brand.id a table with the phone brands
@@ -133,6 +135,21 @@ public function scopeWithPhoneBrands($query, $brandIds)
 {
     return $query->whereHas('phone', function ($query) use ($brandIds) {
         return $query->whereIn('brand_id', $brandIds);
+    });
+}
+```
+
+##### With deeper subquery criteria
+```php
+// Scope that returns all the users with one of the given phone brands ony when the brand id's are under 10
+// phone.brand_id is a FK to brand.id a table with the phone brands
+// User::withLowIdPhoneBrands([1,2,3])->get()
+public function scopeWithLowIdPhoneBrands($query, $brandIds)
+{
+    return $query->whereHas('phone', function ($query) use ($brandIds) {
+            return $query->whereIn('brand_id', $brandIds)->where(function ($query) {
+                $query->where('brand_id', '<', 10);
+            });
     });
 }
 ```
