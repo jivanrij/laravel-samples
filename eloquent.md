@@ -128,7 +128,7 @@ $user->posts()->attach($postModel);
 
 ##### With subquery criteria
 ```php
-// Scope that returns all the users with one of the given phone brands.
+// Scope on the User model that returns all the users with one of the given phone brands.
 // phone.brand_id is a FK to brand.id a table with the phone brands
 // User::withPhoneBrands([1,2,3])->get()
 public function scopeWithPhoneBrands($query, $brandIds)
@@ -141,7 +141,7 @@ public function scopeWithPhoneBrands($query, $brandIds)
 
 ##### With deeper subquery criteria
 ```php
-// Scope that returns all the users with one of the given phone brands only when the phone is pink
+// Scope on the User model that returns all the users with one of the given phone brands only when the phone is pink
 // phone.brand_id is a FK to brand.id a table with the phone brands
 // phone.color is the color of the phone
 // User::withColoredPhoneBrands([1,2,3], 'pink')->get()
