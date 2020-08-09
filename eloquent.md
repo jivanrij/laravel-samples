@@ -141,14 +141,15 @@ public function scopeWithPhoneBrands($query, $brandIds)
 
 ##### With deeper subquery criteria
 ```php
-// Scope that returns all the users with one of the given phone brands ony when the brand id's are under 10
+// Scope that returns all the users with one of the given phone brands only when the phone is pink
 // phone.brand_id is a FK to brand.id a table with the phone brands
-// User::withLowIdPhoneBrands([1,2,3])->get()
-public function scopeWithLowIdPhoneBrands($query, $brandIds)
+// phone.color is the color of the phone
+// User::withColoredPhoneBrands([1,2,3], 'pink')->get()
+public function scopeWithColoredPhoneBrands($query, $brandIds, $color)
 {
-    return $query->whereHas('phone', function ($query) use ($brandIds) {
-            return $query->whereIn('brand_id', $brandIds)->where(function ($query) {
-                $query->where('brand_id', '<', 10);
+    return $query->whereHas('phone', function ($query) use ($brandIds, $color) {
+            return $query->whereIn('brand_id', $brandIds)->where(function ($query) use ($color) {
+                $query->where('color', $color);
             });
     });
 }
