@@ -123,3 +123,16 @@ $user->posts()->createMany([$arrayOfPostFields, $arrayOfPostFields]);
 // Tag belongsToMany existing Post
 $user->posts()->attach($postModel);
 ```
+
+#### Scope Examples
+```php
+// Scope that returns all the users with one of the given phone brands.
+// phone.brand_id is a FK to brand.id a table with the phone brands
+// User::withPhoneBrands([1,2,3])->get()
+public function scopeWithPhoneBrands($query, $brandIds)
+{
+    return $query->whereHas('phone', function ($query) use ($brandIds) {
+        return $query->whereIn('brand_id', $brandIds);
+    });
+}
+```
