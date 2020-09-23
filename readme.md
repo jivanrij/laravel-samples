@@ -10,6 +10,8 @@
 
 [Eloquent relation examples](https://github.com/jivanrij/laravel-samples/blob/master/eloquent.md)
 
+[Encryption examples](https://github.com/jivanrij/laravel-samples/blob/master/encryption.md)
+
 ### Nova
 
 [Validation samples](https://github.com/jivanrij/laravel-samples/blob/master/nova-validation.md)
