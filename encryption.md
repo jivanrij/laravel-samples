@@ -48,3 +48,17 @@ class PersonalData extends Model
     ];
 }
 ```
+
+#### Encrypting users.email
+
+You cannot store the encrypted email in a string field, therefor you need a text field. But for the users.email field you do need a unique. Migrations cannot put a unique on a text field. Therefor, remove the unique, and apply it separatly.
+```php
+    public function up()
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->text('email');
+        });
+
+        DB::unprepared('ALTER TABLE users ADD UNIQUE key users_email_unique (email(64))');
+    }
+```
