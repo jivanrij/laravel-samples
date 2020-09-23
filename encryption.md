@@ -1,3 +1,10 @@
+### Encryption
+
+
+#### Encrypting fields of a model
+
+Add the following Trait to your application. This Trait encrypts and decrypts all the fields in the encryptable array you need to define in the model.
+
 ```php
 namespace App\Traits;
 
@@ -26,5 +33,20 @@ trait Encryptable
 
         return parent::setAttribute($key, $value);
     }
+}
+```
+
+Add the following to your model
+
+```php
+class PersonalData extends Model
+{
+    use Encryptable;
+
+    protected $encryptable = [
+        'contact_person',
+        'email',
+        'name',
+    ];
 }
 ```
