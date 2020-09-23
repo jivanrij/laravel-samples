@@ -14,15 +14,13 @@ trait Encryptable
 {
     public function getAttribute($key)
     {
-        $value = '';
-
         if (in_array($key, $this->encryptable)) {
             if (parent::getAttribute($key)) {
-                $value = Crypt::decrypt(parent::getAttribute($key));
+                return Crypt::decrypt(parent::getAttribute($key));
             }
         }
 
-        return $value;
+        return parent::getAttribute($key);
     }
 
     public function setAttribute($key, $value)
