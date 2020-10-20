@@ -23,3 +23,6 @@
 [Laravel ER diagram](https://github.com/beyondcode/laravel-er-diagram-generator) This package lets you generate entity relation diagrams by inspecting the relationships defined in your model files.
 
 [Nova Settings](https://github.com/optimistdigital/nova-settings) This Laravel Nova package allows you to create custom settings in code (using Nova's native fields) and creates a UI for the users where the settings can be edited.
+
+[Nova Logs](https://novapackages.com/packages/php-junior/nova-logs) This Laravel Nova package shows all the generated log files.
+
