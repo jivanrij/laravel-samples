@@ -24,5 +24,7 @@
 
 [Nova Settings](https://github.com/optimistdigital/nova-settings) This Laravel Nova package allows you to create custom settings in code (using Nova's native fields) and creates a UI for the users where the settings can be edited.
 
-[Nova Logs](https://novapackages.com/packages/php-junior/nova-logs) This Laravel Nova package shows all the generated log files.
+[Nova Logs](https://novapackages.com/packages/php-junior/nova-logs) This Laravel Nova package shows the generated log files.
+
+[Laravel Packer](https://github.com/bitfumes/laravel-packer) Laravel Packer is a command line tool for speeding up your package creation.
 
