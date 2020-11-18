@@ -138,19 +138,3 @@ public function scopeWithPhoneBrands($query, $brandIds)
     });
 }
 ```
-
-##### With deeper subquery criteria
-```php
-// Scope on the User model that returns all the users with one of the given phone brands only when the phone is the given color
-// phone.brand_id is a FK to brand.id a table with the phone brands
-// phone.color is the color of the phone
-// User::withColoredPhoneBrands([1,2,3], 'pink')->get()
-public function scopeWithColoredPhoneBrands($query, $brandIds, $color)
-{
-    return $query->whereHas('phone', function ($query) use ($brandIds, $color) {
-            return $query->whereIn('brand_id', $brandIds)->where(function ($query) use ($color) {
-                $query->where('color', $color);
-            });
-    });
-}
-```
