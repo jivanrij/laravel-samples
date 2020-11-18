@@ -1,5 +1,7 @@
 ### Blade code samples
 
+Note: There are some nice Laravel packages that take care of rendering form elements and stuff like that.
+
 #### Form | Basic form
 ```blade
 {{-- The $model needs to have the same name as the parameter in the route file. Else use route('your.route', ['model' => $model]) --}}
