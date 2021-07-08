@@ -28,5 +28,5 @@
 
 [Laravel Packer](https://github.com/bitfumes/laravel-packer) Laravel Packer is a command line tool for speeding up your package creation.
 
-[Laravel Nova Tiptap Editor Field] (https://github.com/manogi/nova-tiptap) A WYSIWYG editor that's probably better then Trix.
+[Laravel Nova Tiptap Editor Field](https://github.com/manogi/nova-tiptap) A WYSIWYG editor that's probably better then Trix.
 
